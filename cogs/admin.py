@@ -50,17 +50,17 @@ class Admin(commands.Cog):
     @commands.command(hidden=True)
     @commands.is_owner()
     async def load(self, ctx, extension):
-        self.client.load_extension(f'cogs.{extension}')
+        self.bot.load_extension(f'cogs.{extension}')
 
     @commands.command(hidden=True)
     @commands.is_owner()
     async def unload(self, ctx, extension):
-        self.client.unload_extension(f'cogs.{extension}')
+        self.bot.unload_extension(f'cogs.{extension}')
 
     @commands.command(hidden=True)
     @commands.is_owner()
     async def reload(self, ctx, extension):
-        self.client.reload_extension(f'cogs.{extension}')
+        self.bot.reload_extension(f'cogs.{extension}')
 
 
 def setup(bot):
