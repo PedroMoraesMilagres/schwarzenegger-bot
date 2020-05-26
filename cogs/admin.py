@@ -13,7 +13,7 @@ class Admin(commands.Cog):
     # Comando para limpar o chat
     @commands.command()
     @commands.has_permissions(manage_messages=True)
-    async def clear(self, ctx, amount=50):
+    async def clear(self, ctx, amount: int):
         await ctx.channel.purge(limit=amount)
         await ctx.send(f'{amount} Messages deleted.')
 
