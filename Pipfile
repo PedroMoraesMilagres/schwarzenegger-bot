@@ -9,5 +9,6 @@ verify_ssl = true
 discord = "*"
 dotenv = "*"
 
+
 [requires]
 python_version = "3.8"
